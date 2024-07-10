@@ -1,0 +1,4 @@
+SELECT CO.Continent , ROUND(AVG(C.Population), 0) 
+FROM CITY C 
+INNER JOIN COUNTRY CO ON C.CountryCode = CO.CODE
+GROUP BY CO.Continent;
